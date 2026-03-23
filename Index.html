@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS 8 - Trabajo Decente y Crecimiento Económico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #8c2f39;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ODS 8: Trabajo Decente y Crecimiento Económico</h1>
+    <p>Promover el crecimiento económico sostenido, inclusivo y sostenible</p>
+</header>
+
+<nav>
+    <a href="#info">Información</a>
+    <a href="#graficas">Gráficas</a>
+    <a href="#imagenes">Imágenes</a>
+    <a href="#saber">Saber más</a>
+</nav>
+
+<section id="info">
+    <div class="card">
+        <h2>¿Qué es el ODS 8?</h2>
+        <p>El Objetivo de Desarrollo Sostenible 8 busca promover el crecimiento económico inclusivo y sostenible, el empleo pleno y productivo, y el trabajo decente para todos.</p>
+    </div>
+
+    <div class="card">
+        <h2>Importancia</h2>
+        <p>Un trabajo digno mejora la calidad de vida, reduce la pobreza y contribuye a una economía más fuerte y estable.</p>
+    </div>
+</section>
+
+<section id="graficas">
+    <div class="card">
+        <h2>Ejemplo de crecimiento económico</h2>
+        <canvas id="grafica"></canvas>
+    </div>
+</section>
+
+<section id="imagenes">
+    <div class="card">
+        <h2>Imágenes representativas</h2>
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Trabajo en equipo">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Oficina moderna">
+    </div>
+</section>
+
+<section id="saber">
+    <div class="card">
+        <h2>Saber más</h2>
+        <ul>
+            <li><a href="https://www.un.org/sustainabledevelopment/es/economic-growth/" target="_blank">ONU - ODS 8</a></li>
+            <li><a href="https://www.ilo.org/global/lang--es/index.htm" target="_blank">Organización Internacional del Trabajo</a></li>
+            <li><a href="https://www.worldbank.org/" target="_blank">Banco Mundial</a></li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>Proyecto escolar - ODS 8</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('grafica').getContext('2d');
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['2018', '2019', '2020', '2021', '2022'],
+            datasets: [{
+                label: 'Crecimiento (%)',
+                data: [3, 3.5, -2, 4, 4.5],
+                borderWidth: 2
+            }]
+        }
+    });
+</script>
+
+</body>
+</html>
